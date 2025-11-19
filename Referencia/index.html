@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Colonia Miradas Felinas - Colabora</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FFDAB9",
+                        "background-light": "#FFFFFF",
+                        "background-dark": "#333333",
+                        "accent-light": "#B2DFDB",
+                        "accent-dark": "#ADD8E6",
+                        "text-light": "#333333",
+                        "text-dark": "#F5F5F5",
+                        "section-bg-light": "#F5F5F5",
+                        "section-bg-dark": "#424242"
+                    },
+                    fontFamily: {
+                        "display": ["Epilogue", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-4 md:px-10 lg:px-20">
+<div class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-700 py-3">
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2">
+<img class="w-24 h-auto" src="/images/CMF gatitos canasta.png">
+</div>
+<h2 class="text-lg font-bold tracking-tight">Colonia Miradas Felinas</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+<a class="hover:text-primary transition-colors" href="#quienes-somos">Quiénes Somos</a>
+<a class="hover:text-primary transition-colors" href="#nuestros-gatos">Nuestros Gatos</a>
+<a class="hover:text-primary transition-colors" href="#colaborar">Formas de Colaborar</a>
+<a class="hover:text-primary transition-colors" href="#mercadillo">Mercadillo Solidario</a>
+</nav>
+<div class="flex items-center gap-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-text-light text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Donar</span>
+</button>
+<button class="md:hidden flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-100 dark:bg-gray-800 text-text-light dark:text-text-dark gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<!-- Hero Section -->
+<section class="relative" id="hero">
+<div class="flex min-h-[60vh] md:min-h-[70vh] flex-col gap-6 bg-cover bg-top bg-no-repeat items-center justify-center p-4" data-alt="Un gato atigrado de pelo corto mirando a la cámara con curiosidad." style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("/images/colonia-miradas-felinas-3gatos.png");'>
+<div class="flex flex-col gap-4 text-center max-w-2xl">
+<h1 class="text-white text-4xl md:text-6xl font-black leading-tight tracking-[-0.033em]">Nuestra colonia gatuna</h1>
+<h2 class="text-white text-base md:text-lg font-normal leading-normal">Somos un pequeño grupo de voluntarios que nos unimos para realizar una gestión ética de estos animales.</h2>
+</div>
+<div class="flex-wrap gap-3 flex justify-center">
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-text-light text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity" href="#nuestros-gatos">
+<span class="truncate">Ver nuestros gatos</span>
+</a>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-background-light dark:bg-gray-200 text-text-light text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity" href="#colaborar">
+<span class="truncate">Formas de colaborar</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Quienes Somos -->
+<section class="py-16 md:py-24 px-4 md:px-10 lg:px-20" id="quienes-somos">
+<div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em] mb-4">Quiénes Somos</h2>
+<p class="text-base font-normal leading-relaxed mb-6">Somos una asociación sin ánimo de lucro dedicada al rescate y cuidado de gatos en situación de abandono. Nuestra misión es encontrarles un hogar definitivo y concienciar sobre la tenencia responsable de animales. Creemos que cada gato merece una vida llena de amor y seguridad.</p>
+<img class="w-full rounded-xl object-cover aspect-video" data-alt="Una voluntaria sonriendo mientras acaricia a un gato en un refugio de animales." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaVtKuslv4gnyqxAGtpUeyQbsvrmkjrCpo4yQdCj-r1R5I8hVXEYnsCWW3HSTkMKIvs4K1zIwuuB4vCllf2Qj0ez3giD1d8bZumhPOMaJIFbLC995P9RHsejzKoYRD1DrnmkLPrsFSKNQdcr744T7LwIAEZTU9aJPwGzSldAxgL8wUQM_xpCA1-2vOhlZLlsCRx8SbojAY_g0Lc2joa_0nsWuHoCDb2au8wT4Y_U44R4dkI66QF2sH6DMLIRU_GBRbb8mzMRF7doV7"/>
+</div>
+<div class="w-full h-full">
+<img class="w-full h-full rounded-xl object-cover aspect-square" data-alt="Un gato de color jengibre sentado cómodamente en un sofá." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ-OZlycbjFyCa7lRJOvqswcbg7TUek2Elq0q2R49e1b4CK3xqwm-KzoIbs8VLvffLy5MfxOoCfa8vTqH4-x820fLD87OnNMgku2sXIIkXd1AjvJ_UOBaViR4LMZnkJ3duRTFHea3JQwAg8XbbjD_YgYnU2gpYm2cF-9BNAZnah_8SiDcnn7ZrAhD5JpkNsX37mDIlk3ehisSCQPdA7oXnElf02xonwoQBKeqK5oHfDd6EE7tI5kwJgnKJuyUxf7V0WO5eJapoHU9S"/>
+</div>
+</div>
+</section>
+<!-- Nuestros Gatos -->
+<section class="py-16 md:py-24 bg-section-bg-light dark:bg-section-bg-dark px-4 md:px-10 lg:px-20" id="nuestros-gatos">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em]">Nuestros Gatos</h2>
+<p class="text-base font-normal leading-normal mt-2 max-w-2xl mx-auto">Estos son algunos de los amigos peludos que esperan un hogar. Cada uno tiene una historia única y está listo para darte todo su amor.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Cat Card 1 -->
+<div class="bg-background-light dark:bg-background-dark rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+<img class="w-full h-64 object-cover" data-alt="Retrato de un hermoso gato siamés con ojos azules intensos." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzh65TUso3mPhTtxJ6e9eJAY4mfhnEWuhEoceIocemHfaoGFnE3SGYMG5rBN1Cav3PIkBsnga60r2KHBrs7j8uebiWTmIWTa7X8wbpk9hgUtK6WaG1Q8DNXdIE6RCDNfsPNwA3CGfgP3G9C7HfyDLKj49ewFuekZD3jI8W0jzOoS0uJO_KyH_rAhspTShGv6M8kuOaLWk0X-voNTvHL7dq6Qy-jafQJTd_Ex5h42bQS6nJmFkvUzmePRK72Zk8Vbs0BOYeqpLMj8MW"/>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-xl font-bold mb-2">Milo</h3>
+<p class="text-sm leading-relaxed mb-4 flex-grow">Juguetón y cariñoso, le encanta perseguir pelotitas y tomar siestas al sol.</p>
+<button class="mt-auto w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-accent-light dark:bg-accent-dark text-text-light text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Saber más</span>
+</button>
+</div>
+</div>
+<!-- Cat Card 2 -->
+<div class="bg-background-light dark:bg-background-dark rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+<img class="w-full h-64 object-cover" data-alt="Un gato negro de pelo corto sentado elegantemente con un fondo desenfocado." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADegnOkHr5gNfJxIhF2CJ19jaguJzZdVCfv1IyTq_H2gf8SLq5ZvHw0dW5Hu6lOrP-RgwV-JQqkOirRhUwup8UGXo86pkwRoyWeZh3AB_iCbECmb0HJOufLhPShjbtTFMJcIfttErLGURiNMpD61QfwoBGDk1iPhO6OXd94bwr63R8xhIH_tjBbGpdnUgtnoiKSYOsvsrIwyKSPxL2nMt6_Up8qn0uI_iFgO74yZHoz6L-yFj3E4g2tyHawmsNVeP8p5E83hORS-vw"/>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-xl font-bold mb-2">Luna</h3>
+<p class="text-sm leading-relaxed mb-4 flex-grow">Una gata tranquila y elegante que adora las caricias y las tardes de sofá y manta.</p>
+<button class="mt-auto w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-accent-light dark:bg-accent-dark text-text-light text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Saber más</span>
+</button>
+</div>
+</div>
+<!-- Cat Card 3 -->
+<div class="bg-background-light dark:bg-background-dark rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+<img class="w-full h-64 object-cover" data-alt="Un gatito atigrado asomando la cabeza con curiosidad desde detrás de una manta." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0KA_qQ1F8Aq4jun7h5RyeLyhUbCQ7-WXeTIQyqFHcaY6euqnrQKNFOc4Ebj63bOyv1hlJdJI_-PoOgXwK1UCs_HdVh6tD_ForIi2e5CaHFgGr7Khsi_cDkpQVWwDeNh78K2hdxyRQKUc-vNTSLPbZPgoGvvuGwXw28nRqeFBotArkkM_N5CuwGuT1hDs0j7nNy4sKaCp9S97CtcL-s2euHpy2k-3GM_yCTicHBDZmjIRyxqs_pcK282xMPEwkj-V_eosMOQb7wtzu"/>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-xl font-bold mb-2">Simba</h3>
+<p class="text-sm leading-relaxed mb-4 flex-grow">Un explorador nato, curioso y lleno de energía. Siempre está buscando una nueva aventura.</p>
+<button class="mt-auto w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-accent-light dark:bg-accent-dark text-text-light text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Saber más</span>
+</button>
+</div>
+</div>
+<!-- Cat Card 4 -->
+<div class="bg-background-light dark:bg-background-dark rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+<img class="w-full h-64 object-cover" data-alt="Un gato blanco y gris de pelo largo durmiendo plácidamente en una cesta." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANxALiIphxUDWNHVNO7Op4z29sI8XpRxGDbB_vWGfvmeOEhrpLG1Eg5i4ORbqmE7qVn4umkLoTKYds664UBepAZsaPVOYqip9E5ZahxT6Y1LaOcmpkhzOdYT3Y3eVjmlQQ1Lkwlq7PYA6AbZEBL7PdRvlzWYUAVOoPCCKwbmasyUKRjHrNZI1b15rroiL3qPZ0Wwq4XXhVVx3sb9hx_HhCY2KGc3qd5urOBj0w0UiwIilOU89CRD2eOA4HuQAVim9hrikU6ypsveO5"/>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-xl font-bold mb-2">Nala</h3>
+<p class="text-sm leading-relaxed mb-4 flex-grow">Dulce y tímida al principio, pero una vez que coge confianza es la más mimosa.</p>
+<button class="mt-auto w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-accent-light dark:bg-accent-dark text-text-light text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Saber más</span>
+</button>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-text-light text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity mx-auto">
+<span class="truncate">Ver todos los gatos</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Colabora Section -->
+</div>
+</div>
+</header>
+<main class="flex-1">
+<section class="py-16 md:py-24 px-4 md:px-10 lg:px-20 text-center bg-section-bg-light dark:bg-section-bg-dark">
+<div class="max-w-4xl mx-auto">
+<h1 class="text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">Colabora con Nosotros</h1>
+<p class="mt-4 text-lg md:text-xl font-normal leading-relaxed max-w-3xl mx-auto">Tu apoyo es crucial para seguir dando una segunda oportunidad a los gatos que más lo necesitan. Hay muchas formas de ayudar, ¡elige la tuya!</p>
+</div>
+</section>
+<section class="py-16 md:py-24 px-4 md:px-10 lg:px-20" id="donaciones">
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col justify-center">
+<span class="material-symbols-outlined text-5xl text-primary mb-4">volunteer_activism</span>
+<h2 class="text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em] mb-4">Donaciones Económicas</h2>
+<p class="text-base font-normal leading-relaxed mb-6">Cada euro cuenta. Tus donaciones se destinan directamente a cubrir los gastos veterinarios, alimentación de alta calidad, medicinas y el mantenimiento de nuestras instalaciones. Con tu ayuda, podemos seguir rescatando y cuidando a más gatos.</p>
+<div class="flex flex-wrap gap-4">
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-text-light text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity" href="#">
+<span class="truncate">Donar con PayPal</span>
+</a>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-accent-light text-text-light text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity" href="#">
+<span class="truncate">Hacer Teaming (1€/mes)</span>
+</a>
+</div>
+</div>
+<div>
+<img class="w-full rounded-xl object-cover aspect-video" data-alt="Un primer plano de una mano humana poniendo monedas en una hucha con forma de gato." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5pEAMB80n2VDv1KivCc993SElgYx5ekiQOJ8OpJnt_UcMQ3wkWb2T6_kHewiKweXbn5GFihAQaLsEfyS0EFYHpW1QQM805Uh_NjWZN__iVBucUoKadDFmjOV65ifmix3KcPoxN7Hukl5KIFYlJkpLWC3OAnT8X_Y5qjPcaFEyqy4MR3WnEo5SNhLU8aVwp0cikq5HfER9CqmaO9ymMrq51D3dksBS_aiACQXiG7O24HkM-AuECiOkkZpl7b-XvQntqs9Vh1BXIQpg"/>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24 bg-section-bg-light dark:bg-section-bg-dark px-4 md:px-10 lg:px-20" id="voluntariado">
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+<div class="order-2 md:order-1">
+<img class="w-full rounded-xl object-cover aspect-video" data-alt="Un grupo de voluntarios sonrientes limpiando y jugando con gatos en el refugio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ7iKxNNqE7HCBL7xOirETL_eh6GE8HCglr2BEqnP3dzcMecsm8i7W3Oj9WruQdv4r2xZIQX1TuE2qpNcaIkjPRB1gWVRtceAA1dQpi7613zy2q8vmQ554XBDAXO2Ulv-PBRxaElAs8sMw7EBGj3ZQxGQCL67Dhb2jtRMaasVdSCVbfRXhyWA1Y2lY4OyvSRe3wRSzr-7kSH73Y8VParbeQvATZxsITkD4kJvnyOgdvxxViF2ijU3hlJdg8g5C5AzZOZ1QFxqfbU6U"/>
+</div>
+<div class="flex flex-col justify-center order-1 md:order-2">
+<span class="material-symbols-outlined text-5xl text-primary mb-4">groups</span>
+<h2 class="text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em] mb-4">Hazte Voluntario</h2>
+<p class="text-base font-normal leading-relaxed mb-6">¿Tienes tiempo libre y amor por los gatos? ¡Únete a nuestro equipo! Buscamos voluntarios para la limpieza, socialización de gatos, asistencia en eventos, traslados al veterinario y mucho más. Tu tiempo es el regalo más valioso.</p>
+<form class="space-y-4">
+<input class="w-full rounded-lg border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark p-3 text-sm" placeholder="Nombre completo" type="text"/>
+<input class="w-full rounded-lg border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark p-3 text-sm" placeholder="Correo electrónico" type="email"/>
+<textarea class="w-full rounded-lg border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark p-3 text-sm" placeholder="Cuéntanos por qué quieres ser voluntario" rows="4"></textarea>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-text-light text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Enviar solicitud</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24 px-4 md:px-10 lg:px-20" id="apadrinamiento">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-12">
+<span class="material-symbols-outlined text-5xl text-primary mb-4">pets</span>
+<h2 class="text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em]">Apadrina un Gato</h2>
+<p class="text-base font-normal leading-normal mt-2 max-w-3xl mx-auto">Si no puedes adoptar, el apadrinamiento es una forma maravillosa de ayudar. Con una aportación mensual, cubres los gastos de uno de nuestros gatos mientras espera su hogar definitivo. Recibirás noticias y fotos de tu ahijado para que veas lo feliz que es gracias a ti.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-background-light dark:bg-background-dark rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+<img class="w-full h-64 object-cover" data-alt="Retrato de un hermoso gato siamés con ojos azules intensos." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzh65TUso3mPhTtxJ6e9eJAY4mfhnEWuhEoceIocemHfaoGFnE3SGYMG5rBN1Cav3PIkBsnga60r2KHBrs7j8uebiWTmIWTa7X8wbpk9hgUtK6WaG1Q8DNXdIE6RCDNfsPNwA3CGfgP3G9C7HfyDLKj49ewFuekZD3jI8W0jzOoS0uJO_KyH_rAhspTShGv6M8kuOaLWk0X-voNTvHL7dq6Qy-jafQJTd_Ex5h42bQS6nJmFkvUzmePRK72Zk8Vbs0BOYeqpLMj8MW"/>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-xl font-bold mb-2">Oreo</h3>
+<p class="text-sm leading-relaxed mb-4 flex-grow">El abuelito sabio. Necesita cuidados especiales y comida blanda. Apadrínalo para asegurar su jubilación dorada.</p>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-text-light text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity mt-auto" href="#">
+<span class="truncate">Apadrinar a Oreo</span>
+</a>
+</div>
+</div>
+<div class="bg-background-light dark:bg-background-dark rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+<img class="w-full h-64 object-cover" data-alt="Un gato negro de pelo corto sentado elegantemente con un fondo desenfocado." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADegnOkHr5gNfJxIhF2CJ19jaguJzZdVCfv1IyTq_H2gf8SLq5ZvHw0dW5Hu6lOrP-RgwV-JQqkOirRhUwup8UGXo86pkwRoyWeZh3AB_iCbECmb0HJOufLhPShjbtTFMJcIfttErLGURiNMpD61QfwoBGDk1iPhO6OXd94bwr63R8xhIH_tjBbGpdnUgtnoiKSYOsvsrIwyKSPxL2nMt6_Up8qn0uI_iFgO74yZHoz6L-yFj3E4g2tyHawmsNVeP8p5E83hORS-vw"/>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-xl font-bold mb-2">Rubia</h3>
+<p class="text-sm leading-relaxed mb-4 flex-grow">La aventurera con piel sensible. Su pienso especial es vital para su salud. Ayúdala a seguir explorando sin picores.</p>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-text-light text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity mt-auto" href="#">
+<span class="truncate">Apadrinar a Rubia</span>
+</a>
+</div>
+</div>
+<div class="bg-background-light dark:bg-background-dark rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+<img class="w-full h-64 object-cover" data-alt="Un gatito atigrado asomando la cabeza con curiosidad desde detrás de una manta." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0KA_qQ1F8Aq4jun7h5RyeLyhUbCQ7-WXeTIQyqFHcaY6euqnrQKNFOc4Ebj63bOyv1hlJdJI_-PoOgXwK1UCs_HdVh6tD_ForIi2e5CaHFgGr7Khsi_cDkpQVWwDeNh78K2hdxyRQKUc-vNTSLPbZPgoGvvuGwXw28nRqeFBotArkkM_N5CuwGuT1hDs0j7nNy4sKaCp9S97CtcL-s2euHpy2k-3GM_yCTicHBDZmjIRyxqs_pcK282xMPEwkj-V_eosMOQb7wtzu"/>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-xl font-bold mb-2">Tigre</h3>
+<p class="text-sm leading-relaxed mb-4 flex-grow">Un mimoso incurable que necesita protección contra parásitos para poder dar abrazos sin preocupaciones.</p>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-text-light text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity mt-auto" href="#">
+<span class="truncate">Apadrinar a Tigre</span>
+</a>
+</div>
+</div>
+<div class="bg-background-light dark:bg-background-dark rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+<img class="w-full h-64 object-cover" data-alt="Un gato blanco y gris de pelo largo durmiendo plácidamente en una cesta." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANxALiIphxUDWNHVNO7Op4z29sI8XpRxGDbB_vWGfvmeOEhrpLG1Eg5i4ORbqmE7qVn4umkLoTKYds664UBepAZsaPVOYqip9E5ZahxT6Y1LaOcmpkhzOdYT3Y3eVjmlQQ1Lkwlq7PYA6AbZEBL7PdRvlzWYUAVOoPCCKwbmasyUKRjHrNZI1b15rroiL3qPZ0Wwq4XXhVVx3sb9hx_HhCY2KGc3qd5urOBj0w0UiwIilOU89CRD2eOA4HuQAVim9hrikU6ypsveO5"/>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-xl font-bold mb-2">Blanquita</h3>
+<p class="text-sm leading-relaxed mb-4 flex-grow">Una superviviente que merece una vida tranquila. Apadrínala para que no le falten mantas calientes en invierno.</p>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-text-light text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity mt-auto" href="#">
+<span class="truncate">Apadrinar a Blanquita</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24 bg-section-bg-light dark:bg-section-bg-dark px-4 md:px-10 lg:px-20" id="mercadillo">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-12">
+<span class="material-symbols-outlined text-5xl text-primary mb-4">storefront</span>
+<h2 class="text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em]">Mercadillo Solidario</h2>
+<p class="text-base font-normal leading-normal mt-2 max-w-3xl mx-auto">¿Buscas un regalo original y solidario? En nuestro mercadillo encontrarás productos únicos hechos con amor. El 100% de los beneficios se destina a nuestros gatos. ¡Comprar aquí salva vidas! Para adquirir un producto, contáctanos.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-background-light dark:bg-background-dark rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+<img class="w-full h-64 object-cover" data-alt="Una taza de cerámica blanca con el logo de la asociación de gatos." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUCzYjTiLENN5pd0PCIs8ovDQtknw6SxDs6tpmWNUoI3FSIZ4_VaH4bS4Jw628lLoL66uZ2ANgQh7Phq6O6peaxjB_RPkmUIvPnfzCc66aJHtUa9TMXyYqQe6k4TFTRTYxcJ2S7R7mxj40fB3KuRbJT243gEEMvovQ8O2iasM5zl7BBNRfncvpTuwW2k6TLeGhjD8HGlZt1QzAhmdCuzdImPubo31E7hnJWPrHfxTmnO_TQ5gysmKJbPldOWE-9biyEaqP6f3dJYmT"/>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-xl font-bold mb-2">Taza "Loca de los Gatos"</h3>
+<p class="text-sm leading-relaxed text-gray-600 dark:text-gray-400 mb-4 flex-grow">La taza perfecta para tus mañanas. Apta para lavavajillas y microondas.</p>
+<p class="text-lg font-bold text-primary mt-auto">12,00 €</p>
+</div>
+</div>
+<div class="bg-background-light dark:bg-background-dark rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+<img class="w-full h-64 object-cover" data-alt="Una camiseta de algodón blanca con una ilustración de un gato." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQivFSMajjV0hglqrOZ3UtTmKTJQlBkTHejUhdL2FbyHLbySFD7U97_8lql0kAloBe1GJ377Cz9EsuVBIwmuD2n48EdeoBfq1nRqI_1LS1_QrreNd06vd8obl2TOK6L89x7K_0WoN4AZQktFNxSJge-86i30HPPKCgkoovYlQSg9W2sEb4H2qVSDjICI0GmkSWd57zJ7F49y3EgQYRwA8pSKRBeNuGfC6QYzSOTNKtbhgLO_yeBuvFfOsTqQbhTX6lLPxBTO4OYp3C"/>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-xl font-bold mb-2">Camiseta "Adopta, no compres"</h3>
+<p class="text-sm leading-relaxed text-gray-600 dark:text-gray-400 mb-4 flex-grow">Viste con orgullo tu amor por los animales. 100% algodón orgánico.</p>
+<p class="text-lg font-bold text-primary mt-auto">20,00 €</p>
+</div>
+</div>
+<div class="bg-background-light dark:bg-background-dark rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+<img class="w-full h-64 object-cover" data-alt="Una bolsa de tela con un estampado de varias siluetas de gatos." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxPn0XBLq2VDwRQgzXsDb5gkQkdyq_yj1-xbt35zq_LUFnqWWBTKa5UTkDh7erQ4gXoRCjsidbIz06wueAwHjc0goOvnaSYV0vgVdPgzlXq_m9Aa7ZIWNzY2I6C3JeTBMXd9jGRzsgADGWva4UlDeGY67vYN5MGFiKKOKSyS5Hyy1uvvqZfNNsbSo1I04v8FmW-9_Tfu4mENcNe0blPlDOMdZDWW_lR-zrZMdERYu2jpERlg7rEnHVmM8plKCC6NaeLgzW8ZdvZtDO"/>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-xl font-bold mb-2">Bolsa de Tela "Cat-itude"</h3>
+<p class="text-sm leading-relaxed text-gray-600 dark:text-gray-400 mb-4 flex-grow">Ideal para tus compras. Resistente y con un diseño que enamora.</p>
+<p class="text-lg font-bold text-primary mt-auto">15,00 €</p>
+</div>
+</div>
+<div class="bg-background-light dark:bg-background-dark rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+<img class="w-full h-64 object-cover" data-alt="Un llavero de metal con la forma de una huella de gato." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF-xE4FgPLhf9gAIXNYMztl69pbpWmlJhwBxvGSuNjAWSHNBmJYylBYmUJAe_eSXrHmfpaXWfFAYWIAt2lZUD5NVf-h7NXr3PnfSW4JuN9g-3J-AaAtc6UhYmcfHueKh5kYsiI_AC4KX5uqjxKjTaMgtCELS5tu-ka7XWdaTYlNiMF9_SviEr32e005Rj4xMbqhXM26b6Wl-yG65ezz1BQG7HNdUTr3x4fxSddUTW8rhk5J4Kwdecy-Y8VbnnkLUm979Z_dIQcbPiS"/>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-xl font-bold mb-2">Llavero "Huella Solidaria"</h3>
+<p class="text-sm leading-relaxed text-gray-600 dark:text-gray-400 mb-4 flex-grow">Lleva contigo un símbolo de tu ayuda. Hecho de metal resistente.</p>
+<p class="text-lg font-bold text-primary mt-auto">8,00 €</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-background-dark text-background-light px-4 md:px-10 lg:px-20 py-10">
+<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+<div>
+<h4 class="font-bold text-lg mb-2">Asociación de Gatos</h4>
+<p class="text-sm text-gray-400">Dando segundas oportunidades desde 2023.</p>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-2">Contacto</h4>
+<ul class="text-sm text-gray-400 space-y-1">
+<li>Email: contacto@asociaciongatos.org</li>
+<li>Teléfono: +34 123 456 789</li>
+<li>Dirección: Calle Ficticia 123, Ciudad</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-2">Síguenos</h4>
+<div class="flex justify-center md:justify-start gap-4">
+<a class="text-gray-400 hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-gray-400 hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.441c-3.116 0-3.485.01-4.71.068-2.69.123-3.955 1.39-4.078 4.078-.058 1.225-.068 1.595-.068 4.71s.01 3.485.068 4.71c.123 2.689 1.388 3.955 4.078 4.078 1.225.058 1.595.068 4.71.068s3.485-.01 4.71-.068c2.689-.123 3.955-1.388 4.078-4.078.058-1.225.068-1.595.068-4.71s-.01-3.485-.068-4.71c-.123-2.689-1.388-3.955-4.078-4.078-1.225-.058-1.595-.068-4.71-.068zm0 2.882c-1.95 0-3.518 1.567-3.518 3.518s1.567 3.518 3.518 3.518 3.518-1.567 3.518-3.518-1.567-3.518-3.518-3.518zm0 5.618c-1.166 0-2.1-1.043-2.1-2.1s.934-2.1 2.1-2.1 2.1 1.043 2.1 2.1-.934 2.1-2.1 2.1zm5.25-6.167c-.604 0-1.09.486-1.09 1.09s.486 1.09 1.09 1.09 1.09-.486 1.09-1.09-.486-1.09-1.09-1.09z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-500">
+<p>© 2024 Asociación de Gatos. Todos los derechos reservados.</p>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
