@@ -1,3 +1,15 @@
+/* Reset CSS básico */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
 header {
     position: sticky;
     top: 0;
@@ -283,4 +295,720 @@ html {
 
 }
 
+/* Sección Quiénes Somos */
+#quienes-somos {
+    padding: 4rem 1rem;
+
+    @media (min-width: 768px) {
+        & {
+            padding: 6rem 2.5rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        & {
+            padding: 6rem 5rem;
+        }
+    }
+
+    > div {
+        max-width: 56rem;
+        margin: 0 auto;
+        display: grid;
+        gap: 3rem;
+        align-items: start;
+
+        @media (min-width: 768px) {
+            & {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+
+    h2 {
+        font-size: 1.875rem;
+        font-weight: 700;
+        line-height: 1.25;
+        letter-spacing: -0.015em;
+        margin-bottom: 1rem;
+
+        @media (min-width: 768px) {
+            & {
+                font-size: 2.25rem;
+            }
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.625;
+        margin-bottom: 1.5rem;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 0.75rem;
+        object-fit: cover;
+    }
+
+    > div > div:first-child img {
+        aspect-ratio: 16 / 9;
+    }
+
+    > div > div:last-child {
+        @media (min-width: 768px) {
+            & {
+                margin-top: 3.5rem;
+            }
+        }
+    }
+
+    > div > div:last-child img {
+        aspect-ratio: 1 / 1;
+        height: 100%;
+    }
+}
+
+/* Secciones de Gatos (colonia, acogida, fallecidos) */
+#nuestros-gatos,
+#gatos-acogida,
+#gatos-fallecidos {
+    padding: 3rem 1rem 1.5rem;
+    background-color: #F5F5F5;
+
+    @media (min-width: 768px) {
+        & {
+            padding: 4rem 2.5rem 2rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        & {
+            padding: 4rem 5rem 2rem;
+        }
+    }
+
+    > div {
+        max-width: 72rem;
+        margin: 0 auto;
+    }
+
+    > div > div:first-child {
+        text-align: center;
+        margin-bottom: 1.5rem;
+
+        h2 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            line-height: 1.25;
+            letter-spacing: -0.015em;
+
+            @media (min-width: 768px) {
+                & {
+                    font-size: 2.25rem;
+                }
+            }
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-top: 0.5rem;
+            max-width: 42rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    /* Botón ver todos */
+    > div > div:last-child {
+        text-align: center;
+        margin-top: 1rem;
+        padding: 0;
+    }
+}
+
+/* Alternar fondos */
+#gatos-acogida {
+    background-color: white;
+}
+
+/* Grid de gatos dinámico */
+.gatos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-content: start;
+
+    @media (min-width: 640px) {
+        & {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (min-width: 1024px) {
+        & {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+/* Tarjetas de gatos (reutilizable) */
+.cat-card,
+.gatos-grid > div,
+#apadrinamiento > div > div:nth-child(2) > div,
+#mercadillo > div > div:nth-child(2) > div {
+    background-color: white;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+    }
+
+    img {
+        width: 100%;
+        height: 16rem;
+        object-fit: cover;
+    }
+
+    > div {
+        padding: 1.5rem;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 0.875rem;
+        line-height: 1.625;
+        margin-bottom: 1rem;
+        flex-grow: 1;
+    }
+}
+
+/* Gatos ocultos - debe ir DESPUÉS de las tarjetas */
+.gatos-grid > div.hidden-cat {
+    display: none;
+}
+
+.gatos-grid > div.hidden-cat.show-cat {
+    display: flex;
+}
+
+/* Botones generales */
+button, .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    border: none;
+    background-color: rgb(178, 223, 219);
+    color: #333;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+.btn-primary,
+#nuestros-gatos > div > div:last-child button,
+#apadrinamiento > div > div:nth-child(2) > div a,
+#donaciones a,
+#voluntariado form button {
+    background-color: rgb(250, 214, 181);
+    color: #333;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+/* Sección Colabora Header */
+section:has(h1):not(#hero) {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: #F5F5F5;
+
+    @media (min-width: 768px) {
+        & {
+            padding: 6rem 2.5rem;
+        }
+    }
+
+    > div {
+        max-width: 56rem;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+        font-weight: 900;
+        line-height: 1.25;
+        letter-spacing: -0.033em;
+
+        @media (min-width: 768px) {
+            & {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    p {
+        margin-top: 1rem;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.625;
+        max-width: 48rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media (min-width: 768px) {
+            & {
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
+
+/* Sección Donaciones */
+#donaciones {
+    padding: 4rem 1rem;
+
+    @media (min-width: 768px) {
+        & {
+            padding: 6rem 2.5rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        & {
+            padding: 6rem 5rem;
+        }
+    }
+
+    > div {
+        max-width: 72rem;
+        margin: 0 auto;
+        display: grid;
+        gap: 3rem;
+        align-items: center;
+
+        @media (min-width: 768px) {
+            & {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+
+    h2 {
+        font-size: 1.875rem;
+        font-weight: 700;
+        line-height: 1.25;
+        letter-spacing: -0.015em;
+        margin-bottom: 1rem;
+
+        @media (min-width: 768px) {
+            & {
+                font-size: 2.25rem;
+            }
+        }
+    }
+
+    > div > div:first-child p {
+        font-size: 1rem;
+        line-height: 1.625;
+        margin-bottom: 1.5rem;
+    }
+
+    > div > div:first-child > div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    > div > div:first-child span:first-child {
+        display: none;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 0.75rem;
+        object-fit: cover;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+/* Sección Voluntariado */
+#voluntariado {
+    padding: 4rem 1rem;
+    background-color: #F5F5F5;
+
+    @media (min-width: 768px) {
+        & {
+            padding: 6rem 2.5rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        & {
+            padding: 6rem 5rem;
+        }
+    }
+
+    > div {
+        max-width: 72rem;
+        margin: 0 auto;
+        display: grid;
+        gap: 3rem;
+        align-items: center;
+
+        @media (min-width: 768px) {
+            & {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+
+    > div > div:first-child {
+        @media (min-width: 768px) {
+            & {
+                order: -1;
+            }
+        }
+    }
+
+    > div > div:last-child span:first-child {
+        display: none;
+    }
+
+    h2 {
+        font-size: 1.875rem;
+        font-weight: 700;
+        line-height: 1.25;
+        letter-spacing: -0.015em;
+        margin-bottom: 1rem;
+
+        @media (min-width: 768px) {
+            & {
+                font-size: 2.25rem;
+            }
+        }
+    }
+
+    > div > div:last-child > p {
+        font-size: 1rem;
+        line-height: 1.625;
+        margin-bottom: 1.5rem;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 0.75rem;
+        object-fit: cover;
+        aspect-ratio: 16 / 9;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        border: 1px solid #ccc;
+        font-size: 0.875rem;
+        font-family: inherit;
+
+        &:focus {
+            outline: none;
+            border-color: rgb(250, 214, 181);
+        }
+    }
+}
+
+/* Sección Apadrinamiento */
+#apadrinamiento {
+    padding: 4rem 1rem;
+
+    @media (min-width: 768px) {
+        & {
+            padding: 6rem 2.5rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        & {
+            padding: 6rem 5rem;
+        }
+    }
+
+    > div {
+        max-width: 72rem;
+        margin: 0 auto;
+    }
+
+    > div > div:first-child {
+        text-align: center;
+        margin-bottom: 3rem;
+
+        span:first-child {
+            display: none;
+        }
+
+        h2 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            line-height: 1.25;
+            letter-spacing: -0.015em;
+
+            @media (min-width: 768px) {
+                & {
+                    font-size: 2.25rem;
+                }
+            }
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-top: 0.5rem;
+            max-width: 48rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    > div > div:nth-child(2) {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+        @media (min-width: 640px) {
+            & {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            & {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+}
+
+/* Sección Mercadillo */
+#mercadillo {
+    padding: 4rem 1rem;
+    background-color: #F5F5F5;
+
+    @media (min-width: 768px) {
+        & {
+            padding: 6rem 2.5rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        & {
+            padding: 6rem 5rem;
+        }
+    }
+
+    > div {
+        max-width: 72rem;
+        margin: 0 auto;
+    }
+
+    > div > div:first-child {
+        text-align: center;
+        margin-bottom: 3rem;
+
+        span:first-child {
+            display: none;
+        }
+
+        h2 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            line-height: 1.25;
+            letter-spacing: -0.015em;
+
+            @media (min-width: 768px) {
+                & {
+                    font-size: 2.25rem;
+                }
+            }
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-top: 0.5rem;
+            max-width: 48rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    > div > div:nth-child(2) {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+        @media (min-width: 640px) {
+            & {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            & {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+
+    /* Precio */
+    > div > div:nth-child(2) > div > div p:last-child {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: rgb(250, 214, 181);
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #F5F5F5;
+    padding: 2.5rem 1rem;
+
+    @media (min-width: 768px) {
+        & {
+            padding: 2.5rem 2.5rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        & {
+            padding: 2.5rem 5rem;
+        }
+    }
+
+    > div:first-child {
+        max-width: 72rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+
+        @media (min-width: 768px) {
+            & {
+                grid-template-columns: repeat(3, 1fr);
+                text-align: left;
+            }
+        }
+    }
+
+    h4 {
+        font-size: 1.125rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    p, li {
+        font-size: 0.875rem;
+        color: #9ca3af;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin-bottom: 0.25rem;
+        }
+    }
+
+    /* Redes sociales */
+    > div:first-child > div:last-child > div {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        @media (min-width: 768px) {
+            & {
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        color: #9ca3af;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: rgb(250, 214, 181);
+        }
+    }
+
+    a {
+        color: #9ca3af;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: rgb(250, 214, 181);
+        }
+    }
+
+    /* Copyright */
+    > div:last-child {
+        border-top: 1px solid #4b5563;
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        text-align: center;
+
+        p {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+    }
+}
 

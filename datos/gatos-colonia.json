@@ -1,0 +1,68 @@
+[
+    {
+        "nombre": "Milo",
+        "imagen": "/images/gatos colonia/Milo1.jpg",
+        "alt": "Retrato de un hermoso gato gris en la calle",
+        "descripcion": "Juguetón y cariñoso, le encanta perseguir pelotitas y tomar siestas al sol."
+    },
+    {
+        "nombre": "Mía",
+        "imagen": "/images/gatos colonia/Mia.jpg",
+        "alt": "Una gata gris de pelo corto lavándose",
+        "descripcion": "Una gata tranquila y elegante que adora las caricias y las tardes de sofá y manta."
+    },
+    {
+        "nombre": "Blue",
+        "imagen": "/images/gatos colonia/Blue.JPG",
+        "alt": "Un gatito atigrado asomando la cabeza con curiosidad",
+        "descripcion": "Un explorador nato, curioso y lleno de energía. Siempre está buscando una nueva aventura."
+    },
+    {
+        "nombre": "Lea",
+        "imagen": "/images/gatos colonia/Lea.jpg",
+        "alt": "Un gato blanco y gris de pelo largo durmiendo plácidamente",
+        "descripcion": "Dulce y tímida al principio, pero una vez que coge confianza es la más mimosa."
+    },
+    {
+        "nombre": "Marvin",
+        "imagen": "/images/gatos colonia/8AGOSTO MARVIN.jpg",
+        "alt": "Gato Marvin de la colonia",
+        "descripcion": "Dulce y tímido al principio, pero una vez que coge confianza es el más mimoso."
+    },
+    {
+        "nombre": "Lua",
+        "imagen": "/images/gatos colonia/10OCTUBRE LUA.jpg",
+        "alt": "Gato Lua de la colonia",
+        "descripcion": "Dulce y tímida al principio, pero por una latita, se le pasa la timidez."
+    },
+    {
+        "nombre": "Pizco",
+        "imagen": "/images/gatos colonia/Pizco.jpg",
+        "alt": "Gato Pizco de la colonia",
+        "descripcion": "Dulce y tímido al principio, pero por una latita, se le pasa la timidez."
+    },
+    {
+        "nombre": "Tom",
+        "imagen": "/images/gatos colonia/Tom.jpg",
+        "alt": "Gato Tom de la colonia",
+        "descripcion": "Juguetón y cariñoso, le encanta perseguir pelotitas y tomar siestas al sol."
+    },
+    {
+        "nombre": "Ela",
+        "imagen": "/images/gatos colonia/Ela.jpg",
+        "alt": "Gata Ela de la colonia",
+        "descripcion": "Una gata tranquila y elegante que adora las caricias y las tardes de sofá y manta."
+    },
+    {
+        "nombre": "Lía",
+        "imagen": "/images/gatos colonia/Lia-1.jpg",
+        "alt": "Gata Lía de la colonia",
+        "descripcion": "Una gata juguetona y curiosa que adora explorar su entorno."
+    },
+    {
+        "nombre": "Thor",
+        "imagen": "/images/gatos colonia/2FEBRERO THOR.jpg",
+        "alt": "Gato Thor de la colonia",
+        "descripcion": "Un gato fuerte y valiente que siempre está listo para proteger a sus amigos."
+    }
+]
