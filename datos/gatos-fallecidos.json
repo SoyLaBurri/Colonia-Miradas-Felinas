@@ -1,2 +1,68 @@
 [
+    {
+        "nombre": "Amigui",
+        "imagen": "/images/fallecidos/Amigui1.PNG",
+        "alt": "Gato Amigui",
+        "descripcion": ""
+    },
+    {
+        "nombre": "Cora",
+        "imagen": "/images/fallecidos/Cora.jpg",
+        "alt": "Gata Cora",
+        "descripcion": ""
+    },
+    {
+        "nombre": "Kevin",
+        "imagen": "/images/fallecidos/Kevin.jpg",
+        "alt": "Gato Kevin",
+        "descripcion": ""
+    },
+    {
+        "nombre": "Kiwi",
+        "imagen": "/images/fallecidos/Kiwi.jpg",
+        "alt": "Gato Kiwi",
+        "descripcion": ""
+    },
+    {
+        "nombre": "Louise",
+        "imagen": "/images/fallecidos/Louise .jpg",
+        "alt": "Gata Louise",
+        "descripcion": ""
+    },
+    {
+        "nombre": "Negri",
+        "imagen": "/images/fallecidos/Negri.JPG",
+        "alt": "Gato Negri",
+        "descripcion": ""
+    },
+    {
+        "nombre": "Nilo",
+        "imagen": "/images/fallecidos/Nilo1.JPG",
+        "alt": "Gato Nilo",
+        "descripcion": ""
+    },
+    {
+        "nombre": "Noa",
+        "imagen": "/images/fallecidos/Noa.jpg",
+        "alt": "Gata Noa",
+        "descripcion": ""
+    },
+    {
+        "nombre": "Oreo",
+        "imagen": "/images/fallecidos/Oreo.jpg",
+        "alt": "Gato Oreo",
+        "descripcion": ""
+    },
+    {
+        "nombre": "Princesa",
+        "imagen": "/images/fallecidos/Princesa2.jpg",
+        "alt": "Gata Princesa",
+        "descripcion": ""
+    },
+    {
+        "nombre": "Thelma",
+        "imagen": "/images/fallecidos/Thelma.jpg",
+        "alt": "Gata Thelma",
+        "descripcion": ""
+    }
 ]

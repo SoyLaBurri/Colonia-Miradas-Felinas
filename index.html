@@ -28,12 +28,12 @@
     </script>
 
     <header>
-        <div class="logo">
+        <a href="#" class="logo">
             <div>
                 <img src="/images/CMF gatitos canasta.png">
             </div>
             <h2>Colonia Miradas Felinas</h2>
-        </div>
+        </a>
         <nav>
             <a href="#quienes-somos">Quiénes Somos</a>
             <a href="#nuestros-gatos">Nuestros Gatos</a>
@@ -41,9 +41,22 @@
             <a href="#mercadillo">Mercadillo Solidario</a>
         </nav>
         <div>
-            <button id="donate-button">
-                <span>Donar</span>
-            </button>
+            <div class="header-social-links">
+                <a href="https://www.facebook.com/share/1HTM6guw19/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <svg aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                        <path clip-rule="evenodd"
+                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                            fill-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/coloniamiradasfelinas?igsh=MXZuem5qc3JiY2x6ag==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <svg aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.441c-3.116 0-3.485.01-4.71.068-2.69.123-3.955 1.39-4.078 4.078-.058 1.225-.068 1.595-.068 4.71s.01 3.485.068 4.71c.123 2.689 1.388 3.955 4.078 4.078 1.225.058 1.595.068 4.71.068s3.485-.01 4.71-.068c2.689-.123 3.955-1.388 4.078-4.078.058-1.225.068-1.595.068-4.71s-.01-3.485-.068-4.71c-.123-2.689-1.388-3.955-4.078-4.078-1.225-.058-1.595-.068-4.71-.068zm0 2.882c-1.95 0-3.518 1.567-3.518 3.518s1.567 3.518 3.518 3.518 3.518-1.567 3.518-3.518-1.567-3.518-3.518-3.518zm0 5.618c-1.166 0-2.1-1.043-2.1-2.1s.934-2.1 2.1-2.1 2.1 1.043 2.1 2.1-.934 2.1-2.1 2.1zm5.25-6.167c-.604 0-1.09.486-1.09 1.09s.486 1.09 1.09 1.09 1.09-.486 1.09-1.09-.486-1.09-1.09-1.09z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
             <label for="menu-toggle" id="hamburger-menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-paw"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 10c-1.32 0 -1.983 .421 -2.931 1.924l-.244 .398l-.395 .688a50.89 50.89 0 0 0 -.141 .254c-.24 .434 -.571 .753 -1.139 1.142l-.55 .365c-.94 .627 -1.432 1.118 -1.707 1.955c-.124 .338 -.196 .853 -.193 1.28c0 1.687 1.198 2.994 2.8 2.994l.242 -.006c.119 -.006 .234 -.017 .354 -.034l.248 -.043l.132 -.028l.291 -.073l.162 -.045l.57 -.17l.763 -.243l.455 -.136c.53 -.15 .94 -.222 1.283 -.222c.344 0 .753 .073 1.283 .222l.455 .136l.764 .242l.569 .171l.312 .084c.097 .024 .187 .045 .273 .062l.248 .043c.12 .017 .235 .028 .354 .034l.242 .006c1.602 0 2.8 -1.307 2.8 -3c0 -.427 -.073 -.939 -.207 -1.306c-.236 -.724 -.677 -1.223 -1.48 -1.83l-.257 -.19l-.528 -.38c-.642 -.47 -1.003 -.826 -1.253 -1.278l-.27 -.485l-.252 -.432c-1.011 -1.696 -1.618 -2.099 -3.053 -2.099z" /><path d="M19.78 7h-.03c-1.219 .02 -2.35 1.066 -2.908 2.504c-.69 1.775 -.348 3.72 1.075 4.333c.256 .109 .527 .163 .801 .163c1.231 0 2.38 -1.053 2.943 -2.504c.686 -1.774 .34 -3.72 -1.076 -4.332a2.05 2.05 0 0 0 -.804 -.164z" /><path d="M9.025 3c-.112 0 -.185 .002 -.27 .015l-.093 .016c-1.532 .206 -2.397 1.989 -2.108 3.855c.272 1.725 1.462 3.114 2.92 3.114l.187 -.005a1.26 1.26 0 0 0 .084 -.01l.092 -.016c1.533 -.206 2.397 -1.989 2.108 -3.855c-.27 -1.727 -1.46 -3.114 -2.92 -3.114z" /><path d="M14.972 3c-1.459 0 -2.647 1.388 -2.916 3.113c-.29 1.867 .574 3.65 2.174 3.867c.103 .013 .2 .02 .296 .02c1.39 0 2.543 -1.265 2.877 -2.883l.041 -.23c.29 -1.867 -.574 -3.65 -2.174 -3.867a2.154 2.154 0 0 0 -.298 -.02z" /><path d="M4.217 7c-.274 0 -.544 .054 -.797 .161c-1.426 .615 -1.767 2.562 -1.078 4.335c.563 1.451 1.71 2.504 2.941 2.504c.274 0 .544 -.054 .797 -.161c1.426 -.615 1.767 -2.562 1.078 -4.335c-.563 -1.451 -1.71 -2.504 -2.941 -2.504z" /></svg>
             </label>
@@ -65,6 +78,22 @@
             <label for="menu-toggle" class="menu-item">
                 <a href="#mercadillo">Mercadillo Solidario</a>
             </label>
+            <div class="mobile-social-links">
+                <a href="https://www.facebook.com/share/1HTM6guw19/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <svg aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                        <path clip-rule="evenodd"
+                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                            fill-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/coloniamiradasfelinas?igsh=MXZuem5qc3JiY2x6ag==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <svg aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.441c-3.116 0-3.485.01-4.71.068-2.69.123-3.955 1.39-4.078 4.078-.058 1.225-.068 1.595-.068 4.71s.01 3.485.068 4.71c.123 2.689 1.388 3.955 4.078 4.078 1.225.058 1.595.068 4.71.068s3.485-.01 4.71-.068c2.689-.123 3.955-1.388 4.078-4.078.058-1.225.068-1.595.068-4.71s-.01-3.485-.068-4.71c-.123-2.689-1.388-3.955-4.078-4.078-1.225-.058-1.595-.068-4.71-.068zm0 2.882c-1.95 0-3.518 1.567-3.518 3.518s1.567 3.518 3.518 3.518 3.518-1.567 3.518-3.518-1.567-3.518-3.518-3.518zm0 5.618c-1.166 0-2.1-1.043-2.1-2.1s.934-2.1 2.1-2.1 2.1 1.043 2.1 2.1-.934 2.1-2.1 2.1zm5.25-6.167c-.604 0-1.09.486-1.09 1.09s.486 1.09 1.09 1.09 1.09-.486 1.09-1.09-.486-1.09-1.09-1.09z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
         </nav>
     </div>
     <main>
@@ -146,7 +175,7 @@
             </div>
         </section>
         <!-- Colabora Section -->
-        <section>
+        <section id="colaborar">
             <div>
                 <h1>Colabora con Nosotros</h1>
                 <p>Tu apoyo es crucial para seguir dando una segunda oportunidad a los gatos que más lo necesitan. Hay
@@ -163,13 +192,21 @@
                         de alta calidad, medicinas, etc. Con tu ayuda, podemos
                         seguir
                         rescatando y cuidando a más gatos.</p>
-                    <div>
-                        <a href="#">
-                            <span>Donar con PayPal</span>
+                    <div class="donation-buttons">
+                        <a href="https://www.teaming.net/huellas-grupo?lang=es_ES" target="_blank" rel="noopener" class="btn-donation btn-teaming">
+                            <img src="https://djg5cfn4h6wcu.cloudfront.net/resources/images_new/logotipo_teaming.png" alt="Teaming logo" class="donation-logo">
+                            <div>
+                                <span class="btn-title">Teaming</span>
+                                <span class="btn-subtitle">Solo 1€ al mes</span>
+                            </div>
                         </a>
-                        <a href="#">
-                            <span>Hacer Teaming (1€/mes)</span>
-                        </a>
+                        <div class="btn-donation btn-bizum">
+                            <img src="https://cdn.brandfetch.io/idyRlW6PPW/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691512246677" alt="Bizum logo" class="donation-logo">
+                            <div>
+                                <span class="btn-title">Bizum</span>
+                                <span class="btn-subtitle">670 217 553 - 605 490 067</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -181,141 +218,36 @@
         <section id="voluntariado">
             <div>
                 <div>
-                    <img data-alt="Un grupo de voluntarios sonrientes limpiando y jugando con gatos en el refugio."
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ7iKxNNqE7HCBL7xOirETL_eh6GE8HCglr2BEqnP3dzcMecsm8i7W3Oj9WruQdv4r2xZIQX1TuE2qpNcaIkjPRB1gWVRtceAA1dQpi7613zy2q8vmQ554XBDAXO2Ulv-PBRxaElAs8sMw7EBGj3ZQxGQCL67Dhb2jtRMaasVdSCVbfRXhyWA1Y2lY4OyvSRe3wRSzr-7kSH73Y8VParbeQvATZxsITkD4kJvnyOgdvxxViF2ijU3hlJdg8g5C5AzZOZ1QFxqfbU6U" />
+                    <img alt="Evento de voluntarios de Colonia Miradas Felinas"
+                        src="/images/evento.jpg" />
                 </div>
                 <div>
                     <span>groups</span>
                     <h2>Hazte Voluntario</h2>
-                    <p>¿Tienes tiempo libre y amor por los gatos? ¡Únete a nuestro equipo! Buscamos voluntarios para la alimentación, 
-                        limpieza, asistencia en eventos, traslados al veterinario y mucho más.
-                        Tu
-                        tiempo
-                        es el regalo más valioso.</p>
-                    <form>
-                        <input placeholder="Nombre completo" type="text" />
-                        <input placeholder="Correo electrónico" type="email" />
-                        <textarea placeholder="Cuéntanos por qué quieres ser voluntario" rows="4"></textarea>
-                        <button>
-                            <span>Enviar solicitud</span>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <section id="apadrinamiento">
-            <div>
-                <div>
-                    <span>pets</span>
-                    <h2>Apadrina un Gato</h2>
-                    <p>Si no puedes adoptar, el apadrinamiento es una forma maravillosa de ayudar. Con una aportación
-                        mensual,
-                        cubres los gastos de uno de nuestros gatos mientras espera su hogar definitivo. Recibirás
-                        noticias y
-                        fotos de tu ahijado para que veas lo feliz que es gracias a ti.</p>
-                </div>
-                <div>
-                    <div>
-                        <img data-alt="Retrato de un hermoso gato siamés con ojos azules intensos."
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzh65TUso3mPhTtxJ6e9eJAY4mfhnEWuhEoceIocemHfaoGFnE3SGYMG5rBN1Cav3PIkBsnga60r2KHBrs7j8uebiWTmIWTa7X8wbpk9hgUtK6WaG1Q8DNXdIE6RCDNfsPNwA3CGfgP3G9C7HfyDLKj49ewFuekZD3jI8W0jzOoS0uJO_KyH_rAhspTShGv6M8kuOaLWk0X-voNTvHL7dq6Qy-jafQJTd_Ex5h42bQS6nJmFkvUzmePRK72Zk8Vbs0BOYeqpLMj8MW" />
-                        <div>
-                            <h3>Oreo</h3>
-                            <p>El abuelito sabio. Necesita cuidados especiales y comida blanda. Apadrínalo para asegurar
-                                su
-                                jubilación dorada.</p>
-                            <a href="#">
-                                <span>Apadrinar a Oreo</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <img data-alt="Un gato negro de pelo corto sentado elegantemente con un fondo desenfocado."
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuADegnOkHr5gNfJxIhF2CJ19jaguJzZdVCfv1IyTq_H2gf8SLq5ZvHw0dW5Hu6lOrP-RgwV-JQqkOirRhUwup8UGXo86pkwRoyWeZh3AB_iCbECmb0HJOufLhPShjbtTFMJcIfttErLGURiNMpD61QfwoBGDk1iPhO6OXd94bwr63R8xhIH_tjBbGpdnUgtnoiKSYOsvsrIwyKSPxL2nMt6_Up8qn0uI_iFgO74yZHoz6L-yFj3E4g2tyHawmsNVeP8p5E83hORS-vw" />
-                        <div>
-                            <h3>Rubia</h3>
-                            <p>La aventurera con piel sensible. Su pienso especial es vital para su salud. Ayúdala a
-                                seguir
-                                explorando sin picores.</p>
-                            <a href="#">
-                                <span>Apadrinar a Rubia</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <img data-alt="Un gatito atigrado asomando la cabeza con curiosidad desde detrás de una manta."
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0KA_qQ1F8Aq4jun7h5RyeLyhUbCQ7-WXeTIQyqFHcaY6euqnrQKNFOc4Ebj63bOyv1hlJdJI_-PoOgXwK1UCs_HdVh6tD_ForIi2e5CaHFgGr7Khsi_cDkpQVWwDeNh78K2hdxyRQKUc-vNTSLPbZPgoGvvuGwXw28nRqeFBotArkkM_N5CuwGuT1hDs0j7nNy4sKaCp9S97CtcL-s2euHpy2k-3GM_yCTicHBDZmjIRyxqs_pcK282xMPEwkj-V_eosMOQb7wtzu" />
-                        <div>
-                            <h3>Tigre</h3>
-                            <p>Un mimoso incurable que necesita protección contra parásitos para poder dar abrazos sin
-                                preocupaciones.</p>
-                            <a href="#">
-                                <span>Apadrinar a Tigre</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <img data-alt="Un gato blanco y gris de pelo largo durmiendo plácidamente en una cesta."
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuANxALiIphxUDWNHVNO7Op4z29sI8XpRxGDbB_vWGfvmeOEhrpLG1Eg5i4ORbqmE7qVn4umkLoTKYds664UBepAZsaPVOYqip9E5ZahxT6Y1LaOcmpkhzOdYT3Y3eVjmlQQ1Lkwlq7PYA6AbZEBL7PdRvlzWYUAVOoPCCKwbmasyUKRjHrNZI1b15rroiL3qPZ0Wwq4XXhVVx3sb9hx_HhCY2KGc3qd5urOBj0w0UiwIilOU89CRD2eOA4HuQAVim9hrikU6ypsveO5" />
-                        <div>
-                            <h3>Blanquita</h3>
-                            <p>Una superviviente que merece una vida tranquila. Apadrínala para que no le falten mantas
-                                calientes en invierno.</p>
-                            <a href="#">
-                                <span>Apadrinar a Blanquita</span>
-                            </a>
-                        </div>
-                    </div>
+                    <p>¿Tienes tiempo libre y amor por los gatos? ¡Únete a nuestro equipo! Buscamos voluntarios para la alimentación,
+                        limpieza, asistencia en eventos, traslados al veterinario y mucho más. Tu tiempo es el regalo más valioso.
+                        Si tienes algun donativo físico o cualquier otra ayuda que ofrecer, no dudes en contactarnos. 
+                        </p>
+                    <a href="mailto:coloniamiradasfelinas@gmail.com?subject=Solicitud de Voluntariado&body=Hola,%0D%0A%0D%0AMe gustaría ser voluntario en Colonia Miradas Felinas.%0D%0A%0D%0ASaludos" class="btn-contacto-voluntario">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="16" x="2" y="4" rx="2"/>
+                            <path d="m2 7 8.97 5.7a1.94 1.94 0 0 0 2.06 0L22 7"/>
+                        </svg>
+                        <span>Contáctanos</span>
+                    </a>
                 </div>
             </div>
         </section>
         <section id="mercadillo">
             <div>
-                <div>
+                <div class="proximamente-container">
                     <span>storefront</span>
                     <h2>Mercadillo Solidario</h2>
-                    <p>¿Buscas un regalo original y solidario? En nuestro mercadillo encontrarás productos únicos hechos
-                        con
-                        amor. El 100% de los beneficios se destina a nuestros gatos. ¡Comprar aquí salva vidas! Para
-                        adquirir un
-                        producto, contáctanos.</p>
-                </div>
-                <div>
-                    <div>
-                        <img data-alt="Una taza de cerámica blanca con el logo de la asociación de gatos."
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUCzYjTiLENN5pd0PCIs8ovDQtknw6SxDs6tpmWNUoI3FSIZ4_VaH4bS4Jw628lLoL66uZ2ANgQh7Phq6O6peaxjB_RPkmUIvPnfzCc66aJHtUa9TMXyYqQe6k4TFTRTYxcJ2S7R7mxj40fB3KuRbJT243gEEMvovQ8O2iasM5zl7BBNRfncvpTuwW2k6TLeGhjD8HGlZt1QzAhmdCuzdImPubo31E7hnJWPrHfxTmnO_TQ5gysmKJbPldOWE-9biyEaqP6f3dJYmT" />
-                        <div>
-                            <h3>Taza "Loca de los Gatos"</h3>
-                            <p>La taza perfecta para tus mañanas. Apta para lavavajillas y microondas.</p>
-                            <p>12,00 €</p>
-                        </div>
+                    <div class="proximamente-badge">
+                        <p>Próximamente</p>
                     </div>
-                    <div>
-                        <img data-alt="Una camiseta de algodón blanca con una ilustración de un gato."
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQivFSMajjV0hglqrOZ3UtTmKTJQlBkTHejUhdL2FbyHLbySFD7U97_8lql0kAloBe1GJ377Cz9EsuVBIwmuD2n48EdeoBfq1nRqI_1LS1_QrreNd06vd8obl2TOK6L89x7K_0WoN4AZQktFNxSJge-86i30HPPKCgkoovYlQSg9W2sEb4H2qVSDjICI0GmkSWd57zJ7F49y3EgQYRwA8pSKRBeNuGfC6QYzSOTNKtbhgLO_yeBuvFfOsTqQbhTX6lLPxBTO4OYp3C" />
-                        <div>
-                            <h3>Camiseta "Adopta, no compres"</h3>
-                            <p>Viste con orgullo tu amor por los animales. 100% algodón orgánico.</p>
-                            <p>20,00 €</p>
-                        </div>
-                    </div>
-                    <div>
-                        <img data-alt="Una bolsa de tela con un estampado de varias siluetas de gatos."
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxPn0XBLq2VDwRQgzXsDb5gkQkdyq_yj1-xbt35zq_LUFnqWWBTKa5UTkDh7erQ4gXoRCjsidbIz06wueAwHjc0goOvnaSYV0vgVdPgzlXq_m9Aa7ZIWNzY2I6C3JeTBMXd9jGRzsgADGWva4UlDeGY67vYN5MGFiKKOKSyS5Hyy1uvvqZfNNsbSo1I04v8FmW-9_Tfu4mENcNe0blPlDOMdZDWW_lR-zrZMdERYu2jpERlg7rEnHVmM8plKCC6NaeLgzW8ZdvZtDO" />
-                        <div>
-                            <h3>Bolsa de Tela "Cat-itude"</h3>
-                            <p>Ideal para tus compras. Resistente y con un diseño que enamora.</p>
-                            <p>15,00 €</p>
-                        </div>
-                    </div>
-                    <div>
-                        <img data-alt="Un llavero de metal con la forma de una huella de gato."
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF-xE4FgPLhf9gAIXNYMztl69pbpWmlJhwBxvGSuNjAWSHNBmJYylBYmUJAe_eSXrHmfpaXWfFAYWIAt2lZUD5NVf-h7NXr3PnfSW4JuN9g-3J-AaAtc6UhYmcfHueKh5kYsiI_AC4KX5uqjxKjTaMgtCELS5tu-ka7XWdaTYlNiMF9_SviEr32e005Rj4xMbqhXM26b6Wl-yG65ezz1BQG7HNdUTr3x4fxSddUTW8rhk5J4Kwdecy-Y8VbnnkLUm979Z_dIQcbPiS" />
-                        <div>
-                            <h3>Llavero "Huella Solidaria"</h3>
-                            <p>Lleva contigo un símbolo de tu ayuda. Hecho de metal resistente.</p>
-                            <p>8,00 €</p>
-                        </div>
-                    </div>
+                    <img src="/images/mercadillo1.jpg" alt="Mercadillo solidario de Colonia Miradas Felinas" class="mercadillo-image">
+                    <p>Estamos preparando productos únicos y solidarios. ¡Muy pronto podrás apoyarnos mientras consigues algo especial!</p>
                 </div>
             </div>
         </section>
@@ -323,14 +255,14 @@
     <footer>
         <div>
             <div>
-                <h4>Asociación de Gatos</h4>
-                <p>Dando segundas oportunidades desde 2023.</p>
+                <h4>Sobre Nosotros</h4>
+                <p>Ayudando y dando segundas oportunidades a los gatos de la colonia.</p>
             </div>
             <div>
                 <h4>Contacto</h4>
                 <ul>
                     <li>Email: coloniamiradasfelinas@gmail.com</li>
-                    <li>Teléfono: +34 670 217 553</li>
+                    <li>Teléfono: 670 217 553 - 605 490 067</li>
                 </ul>
             </div>
             <div>
@@ -354,7 +286,7 @@
             </div>
         </div>
         <div>
-            <p>© 2024 Asociación de Gatos. Todos los derechos reservados.</p>
+            <p>© 2026 Colonia Miradas Felinas. Desarrollado con ❤️ por MegaDev (Ester G)</p>
         </div>
     </footer>
     <script src="/js/gatos.js"></script>

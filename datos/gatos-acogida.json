@@ -1,2 +1,14 @@
 [
+    {
+        "nombre": "Vaki",
+        "imagen": "/images/gatos acogida/Vaki-casa.jpg",
+        "alt": "Retrato de un hermoso gato negro y blanco en la calle",
+        "descripcion": "Juguetón, cariñoso y gordito. Le encantan los mimos a todas horas"
+    },
+    {
+        "nombre": "Nena",
+        "imagen": "/images/gatos acogida/Nena-casa.jpg",
+        "alt": "Retrato de una gata gris en la calle",
+        "descripcion": "Juguetona, cariñosa y gordita. Le encantan los mimos a todas horas"
+    }
 ]
