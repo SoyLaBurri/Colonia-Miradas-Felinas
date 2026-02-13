@@ -521,9 +521,49 @@ html {
 
 /* Tarjetas de gatos (reutilizable) */
 .cat-card,
-.gatos-grid > div,
 #apadrinamiento > div > div:nth-child(2) > div,
 #mercadillo > div > div:nth-child(2) > div {
+    background-color: white;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+    }
+
+    img {
+        width: 100%;
+        height: 16rem;
+        object-fit: cover;
+    }
+
+    > div {
+        padding: 1.5rem;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 0.875rem;
+        line-height: 1.625;
+        margin-bottom: 1rem;
+        flex-grow: 1;
+    }
+}
+
+/* Tarjetas específicas del grid de gatos */
+.gatos-grid > div {
     background-color: white;
     border-radius: 0.75rem;
     overflow: hidden;
@@ -693,14 +733,13 @@ html {
         }
     }
 }
-}
 
-/* Gatos ocultos - debe ir DESPUÉS de las tarjetas */
+/* Ocultar gatos adicionales - debe ir después de .gatos-grid > div */
 .gatos-grid > div.hidden-cat {
     display: none;
 }
 
-.gatos-grid > div.hidden-cat.show-cat {
+.gatos-grid > div.show-cat {
     display: flex;
 }
 
