@@ -64,5 +64,11 @@
         "imagen": "/images/fallecidos/Thelma.jpg",
         "alt": "Gata Thelma",
         "descripcion": ""
+    },
+    {
+        "nombre": "Vaki",
+        "imagen": "/images/fallecidos/Vaki-casa.jpg",
+        "alt": "Retrato de un hermoso gato negro y blanco en la calle",
+        "descripcion": ""
     }
 ]

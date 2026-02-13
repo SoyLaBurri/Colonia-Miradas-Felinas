@@ -63,6 +63,41 @@ function mostrarModalGato(gato) {
         </div>
     `;
 
+    // Ajustar tamaño del modal según la imagen
+    const modalImg = overlay.querySelector('img');
+    const modalContent = overlay.querySelector('.modal-gato-content');
+
+    modalImg.onload = function() {
+        const imgWidth = this.naturalWidth;
+        const imgHeight = this.naturalHeight;
+        const aspectRatio = imgWidth / imgHeight;
+
+        // Calcular tamaño máximo disponible (dejando margen)
+        const maxWidth = window.innerWidth * 0.9;
+        const maxHeight = window.innerHeight * 0.6; // 60vh para la imagen
+        const minWidth = Math.min(300, window.innerWidth * 0.9); // Ancho mínimo
+
+        let finalWidth, finalHeight;
+
+        // Ajustar según la relación de aspecto
+        if (imgWidth / maxWidth > imgHeight / maxHeight) {
+            // Limitado por ancho
+            finalWidth = Math.min(imgWidth, maxWidth);
+            finalHeight = finalWidth / aspectRatio;
+        } else {
+            // Limitado por alto
+            finalHeight = Math.min(imgHeight, maxHeight);
+            finalWidth = finalHeight * aspectRatio;
+        }
+
+        // Asegurar ancho mínimo
+        finalWidth = Math.max(finalWidth, minWidth);
+
+        // Aplicar tamaño al contenedor
+        modalContent.style.width = finalWidth + 'px';
+        modalContent.style.maxWidth = 'none';
+    };
+
     // Mostrar modal
     setTimeout(() => overlay.classList.add('active'), 10);
 
@@ -108,6 +143,7 @@ function handleEscKey(e) {
         cerrarModal();
     }
 }
+
 
 // Cargar y renderizar gatos de una sección
 async function cargarGatos(seccionId) {

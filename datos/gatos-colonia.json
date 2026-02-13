@@ -8,7 +8,7 @@
     },
     {
         "nombre": "Mía",
-        "imagen": "/images/gatos colonia/Mia.jpg",
+        "imagen": "/images/gatos colonia/Mia1.jpg",
         "alt": "Una gata gris de pelo corto lavándose",
         "descripcion": "Es una gata particular, le gusta mucho observarnos y estar cerca, vivir en la calle hace que necesiten estar siempre alerta, pero a veces baja la guardia y muestra lo cariñosa que es. Es fácil reconocerla porqué además de ser muy linda le falta la mitad de su cola, un día apareció con una herida y a pesar del tratamiento termino perdiendo ese fragmento. De la última camada queda Milo que sigue viviendo con ella, otro falleció durante una tormenta, otro desapareció y su pequeña la encontramos en mal estado con 53 días, la rescatamos y vivió en casa 3 años hasta que tuvimos que despedirnos de ella, la pequeña Nicky, era igual de maravillosa que su madre."
     
@@ -68,6 +68,48 @@
         "imagen": "/images/gatos colonia/2FEBRERO THOR.jpg",
         "alt": "Gato Thor de la colonia",
         "descripcion": "También conocido como cara triste, no le gusta que nos acerquemos demasiado pero su gusto por la comida hace que este siempre cerca. A pesar de no ser un gato sociable, en diciembre tuvimos que capturarlo por una cojera que no se solucionaba, le llevamos al veterinario y estuvo un tiempo en casa de una compañera con tratamiento, nos sorprendió lo rápido y bien que se adaptó, lo cogimos junto a Louise y estaban felices, pero cuando se recuperó regresó a la colonia con el resto de sus compañeros." 
+
+    },
+    {
+        "nombre": "Ashlam",
+        "imagen": "/images/gatos colonia/Ashlam1.jpg",
+        "alt": "Gato Ashlam de la colonia",
+        "descripcion": "" 
+
+    },
+    {
+        "nombre": "Bluemoon",
+        "imagen": "/images/gatos colonia/Bluemoon.jpg",
+        "alt": "Gato Bluemoon de la colonia",
+        "descripcion": "" 
+
+    },
+    {
+        "nombre": "Gaia",
+        "imagen": "/images/gatos colonia/Gaia.jpg",
+        "alt": "Gata Gaia de la colonia",
+        "descripcion": "" 
+
+    },
+    {
+        "nombre": "Moka",
+        "imagen": "/images/gatos colonia/Moka.jpg",
+        "alt": "Gata Moka de la colonia",
+        "descripcion": "" 
+
+    },
+    {
+        "nombre": "Nala",
+        "imagen": "/images/gatos colonia/Nala1.jpg",
+        "alt": "Gata Nala de la colonia",
+        "descripcion": "" 
+
+    },
+    {
+        "nombre": "Moucha",
+        "imagen": "/images/gatos colonia/Blue&Moucha.jpg",
+        "alt": "Gata Moucha de la colonia",
+        "descripcion": "" 
 
     }
 ]
